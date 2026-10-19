@@ -1,0 +1,296 @@
+{
+ "mentor_key": "epictetus",
+ "day": "2026-10-19",
+ "app_commit": "2f36e0f",
+ "how": "Same logic as home_dashboard() in server.py, run once per input set: Retriever.search(query, k=len(chunks), balance=False) over data/epictetus.json; 'voice' chunks first ('voice'+'life' only if no voice chunk qualifies); passage = _trim_passage(chunk text), unedited; the app stops after the first 3 clean ones (these are the 'top 3 considered'); pick = sha256(day + mentor_key) mod (number of candidates considered). The pick depends only on the day and mentor, so with 3 candidates it is the same slot for every situation, while the passage in that slot differs. No model or API call.",
+ "situations": [
+  {
+   "n": 1,
+   "inputs": {
+    "situation": "I keep putting off the thing I know I should start.",
+    "goal": "To begin and keep going.",
+    "struggle": "I am afraid I will not be good enough."
+   },
+   "query": "I keep putting off the thing I know I should start. To begin and keep going. I am afraid I will not be good enough.",
+   "candidates": [
+    {
+     "order_considered": 1,
+     "passage": "Say on the occasion, at such price is sold freedom from perturbation; at such price is sold tranquillity, but nothing is got for nothing.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 210,
+     "chunk_id": "epic-0-0210",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 32.42692612905965,
+     "picked_today": false
+    },
+    {
+     "order_considered": 2,
+     "passage": "But a tranquil and happy life contains nothing so sure as continuity and freedom from obstacle.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 174,
+     "chunk_id": "epic-0-0174",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 30.70780371850428,
+     "picked_today": false
+    },
+    {
+     "order_considered": 3,
+     "passage": "When death appears an evil, we ought to have this rule in readiness, that it is fit to avoid evil things, and that death is a necessary thing.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 33,
+     "chunk_id": "epic-0-0033",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 29.163985316168212,
+     "picked_today": true
+    }
+   ],
+   "picked": {
+    "order_considered": 3,
+    "chunk_index": 33
+   }
+  },
+  {
+   "n": 2,
+   "inputs": {
+    "situation": "People around me keep telling me what I should do with my life.",
+    "goal": "To follow my own judgement.",
+    "struggle": "I cannot tell what I really want."
+   },
+   "query": "People around me keep telling me what I should do with my life. To follow my own judgement. I cannot tell what I really want.",
+   "candidates": [
+    {
+     "order_considered": 1,
+     "passage": "But children do what they do through want of thought (or deficiency in knowledge), and we through knowledge are unhappy.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 134,
+     "chunk_id": "epic-0-0134",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 27.00754163844378,
+     "picked_today": false
+    },
+    {
+     "order_considered": 2,
+     "passage": "But a tranquil and happy life contains nothing so sure as continuity and freedom from obstacle.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 174,
+     "chunk_id": "epic-0-0174",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 25.35755894908065,
+     "picked_today": false
+    },
+    {
+     "order_considered": 3,
+     "passage": "When death appears an evil, we ought to have this rule in readiness, that it is fit to avoid evil things, and that death is a necessary thing.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 33,
+     "chunk_id": "epic-0-0033",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 22.747777690275274,
+     "picked_today": true
+    }
+   ],
+   "picked": {
+    "order_considered": 3,
+    "chunk_index": 33
+   }
+  },
+  {
+   "n": 3,
+   "inputs": {
+    "situation": "I lost someone close to me recently.",
+    "goal": "To find my footing again.",
+    "struggle": "The grief comes in waves."
+   },
+   "query": "I lost someone close to me recently. To find my footing again. The grief comes in waves.",
+   "candidates": [
+    {
+     "order_considered": 1,
+     "passage": "For we only lose those things, we have only pains about those things, which we possess.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 22,
+     "chunk_id": "epic-0-0022",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 16.712330408177802,
+     "picked_today": false
+    },
+    {
+     "order_considered": 2,
+     "passage": "Say on the occasion, at such price is sold freedom from perturbation; at such price is sold tranquillity, but nothing is got for nothing.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 210,
+     "chunk_id": "epic-0-0210",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 15.531991667935756,
+     "picked_today": false
+    },
+    {
+     "order_considered": 3,
+     "passage": "For take away the fear of death, and suppose as many thunders and lightnings as you please, and you will know what calm and serenity there is in the ruling faculty.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 91,
+     "chunk_id": "epic-0-0091",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 15.161857834012785,
+     "picked_today": true
+    }
+   ],
+   "picked": {
+    "order_considered": 3,
+    "chunk_index": 91
+   }
+  },
+  {
+   "n": 4,
+   "inputs": {
+    "situation": "I worry all the time about things I cannot control.",
+    "goal": "To feel calmer.",
+    "struggle": "I cannot switch my mind off."
+   },
+   "query": "I worry all the time about things I cannot control. To feel calmer. I cannot switch my mind off.",
+   "candidates": [
+    {
+     "order_considered": 1,
+     "passage": "When death appears an evil, we ought to have this rule in readiness, that it is fit to avoid evil things, and that death is a necessary thing.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 33,
+     "chunk_id": "epic-0-0033",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 19.696634819890885,
+     "picked_today": false
+    },
+    {
+     "order_considered": 2,
+     "passage": "Education is the learning how to adapt the natural præcognitions to the particular things conformably to nature; and then to distinguish that of things some are in our power, but others are not.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 27,
+     "chunk_id": "epic-0-0027",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 18.66475573407919,
+     "picked_today": false
+    },
+    {
+     "order_considered": 3,
+     "passage": "Preserve that which is your own good in everything; and as to every other thing, as it is permitted, and so far as to behave consistently with reason in respect to them, content with this only.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 172,
+     "chunk_id": "epic-0-0172",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 18.374876812395126,
+     "picked_today": true
+    }
+   ],
+   "picked": {
+    "order_considered": 3,
+    "chunk_index": 172
+   }
+  },
+  {
+   "n": 5,
+   "inputs": {
+    "situation": "I am in a job I do not enjoy.",
+    "goal": "To find work that fits me.",
+    "struggle": "I feel stuck."
+   },
+   "query": "I am in a job I do not enjoy. To find work that fits me. I feel stuck.",
+   "candidates": [
+    {
+     "order_considered": 1,
+     "passage": "When death appears an evil, we ought to have this rule in readiness, that it is fit to avoid evil things, and that death is a necessary thing.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 33,
+     "chunk_id": "epic-0-0033",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 22.46737268541595,
+     "picked_today": false
+    },
+    {
+     "order_considered": 2,
+     "passage": "For we only lose those things, we have only pains about those things, which we possess.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 22,
+     "chunk_id": "epic-0-0022",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 21.551220065059386,
+     "picked_today": false
+    },
+    {
+     "order_considered": 3,
+     "passage": "For the future, relying on these opinions, walk about upright, free; not trusting to the size of your body, as an athlete, for a man ought not to be invincible in the way that an ass is.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 23,
+     "chunk_id": "epic-0-0023",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 21.48684538534041,
+     "picked_today": true
+    }
+   ],
+   "picked": {
+    "order_considered": 3,
+    "chunk_index": 23
+   }
+  },
+  {
+   "n": 6,
+   "inputs": {
+    "situation": "I get angry too quickly with people I love.",
+    "goal": "To be patient.",
+    "struggle": "I regret what I say."
+   },
+   "query": "I get angry too quickly with people I love. To be patient. I regret what I say.",
+   "candidates": [
+    {
+     "order_considered": 1,
+     "passage": "But a tranquil and happy life contains nothing so sure as continuity and freedom from obstacle.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 174,
+     "chunk_id": "epic-0-0174",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 18.85542679833944,
+     "picked_today": false
+    },
+    {
+     "order_considered": 2,
+     "passage": "You come full of envy, and humbled, because you bring nothing from home; and you sit during the discussion thinking of nothing else than how your father is disposed towards you and your brother.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 93,
+     "chunk_id": "epic-0-0093",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 18.15481525224205,
+     "picked_today": false
+    },
+    {
+     "order_considered": 3,
+     "passage": "Preserve that which is your own good in everything; and as to every other thing, as it is permitted, and so far as to behave consistently with reason in respect to them, content with this only.",
+     "source_kind": "voice",
+     "source_file": "data/epictetus.json",
+     "chunk_index": 172,
+     "chunk_id": "epic-0-0172",
+     "source": "Discourses, trans. George Long",
+     "bm25_score": 18.054211531347534,
+     "picked_today": true
+    }
+   ],
+   "picked": {
+    "order_considered": 3,
+    "chunk_index": 172
+   }
+  }
+ ]
+}
