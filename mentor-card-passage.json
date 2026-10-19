@@ -1,0 +1,25 @@
+{
+ "day": "2026-10-19",
+ "mentor_key": "epictetus",
+ "mentor_display": "Epictetus",
+ "heading": "A word from your mentor",
+ "passage": "For the future, relying on these opinions, walk about upright, free; not trusting to the size of your body, as an athlete, for a man ought not to be invincible in the way that an ass is.",
+ "attribution": "— Epictetus",
+ "source_kind": "voice",
+ "source_file": "data/epictetus.json",
+ "chunk_index": 23,
+ "chunk_meta": {
+  "id": "epic-0-0023",
+  "words": 472,
+  "kind": "voice",
+  "source": "Discourses, trans. George Long"
+ },
+ "sample_inputs": {
+  "situation": "I have to give my first presentation at work next week.",
+  "goal": "To speak calmly and clearly.",
+  "struggle": "I dread how it will land."
+ },
+ "query": "I have to give my first presentation at work next week. To speak calmly and clearly. I dread how it will land.",
+ "selection": "same code as home_dashboard() in server.py: BM25 over the Epictetus corpus, 'voice' chunks only, _trim_passage filter, first 3 clean candidates, day-hash pick (index 2 of 3 today). No model call.",
+ "source_chunk_full_text": "But the tyrant will chain—what? The leg. He will take away—what? The neck. What then will he not chain and not take away? The will. This is why the ancients taught the maxim, Know thyself. Therefore we ought to exercise ourselves in small things, and beginning with them to proceed to the greater. I have pain in the head. Do not say, Alas! I have pain in the ear. Do not say alas! And I do not say that you are not allowed to groan, but do not groan inwardly; and if your slave is slow in bringing a bandage, do not cry out and torment yourself, and say, Every body hates me; for who would not hate such a man? For the future, relying on these opinions, walk about upright, free; not trusting to the size of your body, as an athlete, for a man ought not to be invincible in the way that an ass is. HOW WE SHOULD BEHAVE TO TYRANTS.—If a man possesses any superiority, or thinks that he does when he does not, such a man, if he is uninstructed, will of necessity be puffed up through it. For instance, the tyrant says, I am master of all! And what can you do for me? Can you give me desire which shall have no hindrance? How can you? Have you the infallible power of avoiding what you would avoid? Have you the power of moving towards an object without error? And how do you possess this power? Come, when you are in a ship, do you trust to yourself or to the helmsman? And when you are in a chariot, to whom do you trust but to the driver? And how is it in all other arts? Just the same. In what, then, lies your power? All men pay respect to me. Well, I also pay respect to my platter, and I wash it and wipe it; and for the sake of my oil-flask, I drive a peg into the wall. Well, then, are these things superior to me? No, but they supply some of my wants, and for this reason I take care of them. Well, do I not attend to my ass? Do I not wash his feet? Do I not clean him? Do you not know that every man has regard to himself, and to you just the same as he has regard to his ass? For who has regard to you as a man? Show me. Who wishes to become like you? Who imitates you, as he imitates Socrates? But I can cut off your head. You say right. I had forgotten that I must have regard to you, as I would to a fever and the bile, and raise an altar to you, as there is at Rome an altar to fever."
+}

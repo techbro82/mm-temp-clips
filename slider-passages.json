@@ -1,0 +1,660 @@
+{
+ "source": "server.py _build_mentor_wisdom() then _build_wisdom_sample(pool, day) run unmodified against data/*.json; no API calls",
+ "day": "2026-10-19",
+ "pool_size": 825,
+ "sample_size": 50,
+ "distinct_mentors_in_sample": 22,
+ "note": "era_line_as_displayed is the stored era text; the page uppercases it with CSS text-transform. position is the 1-based slide number ('N of 50').",
+ "one_per_mentor": [
+  {
+   "position": 1,
+   "mentor_key": "marcus_aurelius",
+   "mentor": "Marcus Aurelius",
+   "passage": "Let that of Heraclitus never be out of thy mind, that the death of earth, is water, and the death of water, is air; and the death of air, is fire; and so on the contrary.",
+   "era_line_stored": "the Roman frontier, around 175 AD, on campaign",
+   "era_line_as_displayed": "THE ROMAN FRONTIER, AROUND 175 AD, ON CAMPAIGN",
+   "attribution_line": "— Marcus Aurelius"
+  },
+  {
+   "position": 2,
+   "mentor_key": "rockefeller",
+   "mentor": "John D. Rockefeller",
+   "passage": "It is a pleasure to testify even at this late date to his great kindness and faith in me.",
+   "era_line_stored": "New York, 1909, after retirement from active business",
+   "era_line_as_displayed": "NEW YORK, 1909, AFTER RETIREMENT FROM ACTIVE BUSINESS",
+   "attribution_line": "— John D. Rockefeller"
+  },
+  {
+   "position": 3,
+   "mentor_key": "addams",
+   "mentor": "Jane Addams",
+   "passage": "It should demand from its residents a scientific patience in the accumulation of facts and the steady holding of their sympathies as one of the best instruments for that accumulation.",
+   "era_line_stored": "Chicago, the settlement house movement, around 1910",
+   "era_line_as_displayed": "CHICAGO, THE SETTLEMENT HOUSE MOVEMENT, AROUND 1910",
+   "attribution_line": "— Jane Addams"
+  },
+  {
+   "position": 4,
+   "mentor_key": "twain",
+   "mentor": "Mark Twain",
+   "passage": "The desire for fame is only the desire to be continuously conspicuous and attract attention and be talked about.",
+   "era_line_stored": "the United States, turn of the twentieth century",
+   "era_line_as_displayed": "THE UNITED STATES, TURN OF THE TWENTIETH CENTURY",
+   "attribution_line": "— Mark Twain"
+  },
+  {
+   "position": 5,
+   "mentor_key": "thoreau",
+   "mentor": "Henry David Thoreau",
+   "passage": "When we are unhurried and wise, we perceive that only great and worthy things have any permanent and absolute existence,—that petty fears and petty pleasures are but the shadow of the reality.",
+   "era_line_stored": "Concord, Massachusetts, 1845 to 1854",
+   "era_line_as_displayed": "CONCORD, MASSACHUSETTS, 1845 TO 1854",
+   "attribution_line": "— Henry David Thoreau"
+  },
+  {
+   "position": 6,
+   "mentor_key": "cicero",
+   "mentor": "Cicero",
+   "passage": "When they are addressed in language expressly adapted to flatter their vanity, they look upon such empty persiflage as a testimony to the truth of their own praises.",
+   "era_line_stored": "Rome, around 44 BC",
+   "era_line_as_displayed": "ROME, AROUND 44 BC",
+   "attribution_line": "— Cicero"
+  },
+  {
+   "position": 7,
+   "mentor_key": "laozi",
+   "mentor": "Lao Tzu",
+   "passage": "It is only by this moderation that there is effected an early return (to man's normal state).",
+   "era_line_stored": "ancient China, by tradition the 6th century BC",
+   "era_line_as_displayed": "ANCIENT CHINA, BY TRADITION THE 6TH CENTURY BC",
+   "attribution_line": "— Lao Tzu"
+  },
+  {
+   "position": 8,
+   "mentor_key": "kempis",
+   "mentor": "Thomas a Kempis",
+   "passage": "Lo, thus shall the man be blessed, that seeketh God with all his heart, and receiveth not his soul in vain.",
+   "era_line_stored": "a monastery in the Low Countries, the 1400s",
+   "era_line_as_displayed": "A MONASTERY IN THE LOW COUNTRIES, THE 1400S",
+   "attribution_line": "— Thomas a Kempis"
+  },
+  {
+   "position": 9,
+   "mentor_key": "darwin",
+   "mentor": "Charles Darwin",
+   "passage": "The surface appears from a distance as if clothed with coarse pasture, but this in truth is nothing but fern.",
+   "era_line_stored": "aboard HMS Beagle and after, the 1830s onward",
+   "era_line_as_displayed": "ABOARD HMS BEAGLE AND AFTER, THE 1830S ONWARD",
+   "attribution_line": "— Charles Darwin"
+  },
+  {
+   "position": 10,
+   "mentor_key": "montaigne",
+   "mentor": "Michel de Montaigne",
+   "passage": "And, at all events, it will be always an honour to me, to be able to do anything which shall be for the pleasure of you and yours, on account of the obligation under which I lie to serve you.",
+   "era_line_stored": "his tower library in Gascony, France, the late 1500s",
+   "era_line_as_displayed": "HIS TOWER LIBRARY IN GASCONY, FRANCE, THE LATE 1500S",
+   "attribution_line": "— Michel de Montaigne"
+  },
+  {
+   "position": 11,
+   "mentor_key": "carnegie",
+   "mentor": "Andrew Carnegie",
+   "passage": "As the half-dozen young men who constituted our inner circle grew in knowledge, it was inevitable that the mysteries of life and death, the here and the hereafter, should cross our path and have to be grappled with.",
+   "era_line_stored": "the United States and Scotland, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES AND SCOTLAND, EARLY 1900S",
+   "attribution_line": "— Andrew Carnegie"
+  },
+  {
+   "position": 12,
+   "mentor_key": "booker_washington",
+   "mentor": "Booker T. Washington",
+   "passage": "I do not believe that any state should make a law that permits an ignorant and poverty-stricken white man to vote, and prevents a black man in the same condition from voting.",
+   "era_line_stored": "Tuskegee, Alabama, 1901",
+   "era_line_as_displayed": "TUSKEGEE, ALABAMA, 1901",
+   "attribution_line": "— Booker T. Washington"
+  },
+  {
+   "position": 13,
+   "mentor_key": "douglass",
+   "mentor": "Frederick Douglass",
+   "passage": "I therefore, though with great prudence, commenced early to ascertain their views and feelings in regard to their condition, and to imbue their minds with thoughts of freedom.",
+   "era_line_stored": "the American North, 1845, after escaping slavery",
+   "era_line_as_displayed": "THE AMERICAN NORTH, 1845, AFTER ESCAPING SLAVERY",
+   "attribution_line": "— Frederick Douglass"
+  },
+  {
+   "position": 14,
+   "mentor_key": "keller",
+   "mentor": "Helen Keller",
+   "passage": "You are spared the pain of many sights and sounds, which you are only too happy in escaping.",
+   "era_line_stored": "the United States, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES, EARLY 1900S",
+   "attribution_line": "— Helen Keller"
+  },
+  {
+   "position": 15,
+   "mentor_key": "faraday",
+   "mentor": "Michael Faraday",
+   "passage": "Think of the time man has lived in hopeless ignorance: think that only during a period which might be spanned by the life of one man, has the truth been known.",
+   "era_line_stored": "London, the Royal Institution, mid-1800s",
+   "era_line_as_displayed": "LONDON, THE ROYAL INSTITUTION, MID-1800S",
+   "attribution_line": "— Michael Faraday"
+  },
+  {
+   "position": 16,
+   "mentor_key": "augustine",
+   "mentor": "Augustine of Hippo",
+   "passage": "Thence did the fame spread, thence Thy praises glowed, shone; thence the mind of that enemy, though not turned to the soundness of believing, was yet turned back from her fury of persecuting.",
+   "era_line_stored": "North Africa, around 400 AD",
+   "era_line_as_displayed": "NORTH AFRICA, AROUND 400 AD",
+   "attribution_line": "— Augustine of Hippo"
+  },
+  {
+   "position": 17,
+   "mentor_key": "william_james",
+   "mentor": "William James",
+   "passage": "Take the happiness which achieved religious belief confers.",
+   "era_line_stored": "the United States, around 1902",
+   "era_line_as_displayed": "THE UNITED STATES, AROUND 1902",
+   "attribution_line": "— William James"
+  },
+  {
+   "position": 18,
+   "mentor_key": "seneca",
+   "mentor": "Seneca",
+   "passage": "It is the practice of the multitude to bark at eminent men as little dogs do at strangers; for they look upon other men’s virtues as the upbraiding of their own wickedness.",
+   "era_line_stored": "Rome, around 63 AD, in his last years",
+   "era_line_as_displayed": "ROME, AROUND 63 AD, IN HIS LAST YEARS",
+   "attribution_line": "— Seneca"
+  },
+  {
+   "position": 19,
+   "mentor_key": "emerson",
+   "mentor": "Ralph Waldo Emerson",
+   "passage": "Ever an old friend, ever like a dear friend and brother when we chat affectedly with strangers, comes in this honest face, and takes a grave liberty with us, and shames us out of our nonsense.",
+   "era_line_stored": "New England, mid-1800s",
+   "era_line_as_displayed": "NEW ENGLAND, MID-1800S",
+   "attribution_line": "— Ralph Waldo Emerson"
+  },
+  {
+   "position": 20,
+   "mentor_key": "grant",
+   "mentor": "Ulysses S. Grant",
+   "passage": "One of mine is that in positions of great responsibility every one should do his duty to the best of his ability where assigned by competent authority, without application or the use of influence to change his position.",
+   "era_line_stored": "the United States, 1885, writing his memoirs as he was dying",
+   "era_line_as_displayed": "THE UNITED STATES, 1885, WRITING HIS MEMOIRS AS HE WAS DYING",
+   "attribution_line": "— Ulysses S. Grant"
+  },
+  {
+   "position": 21,
+   "mentor_key": "epictetus",
+   "mentor": "Epictetus",
+   "passage": "But where there is death or exile or pain or infamy, there we attempt to run away, there we are struck with terror.",
+   "era_line_stored": "a Stoic school at Nicopolis, around 108 AD",
+   "era_line_as_displayed": "A STOIC SCHOOL AT NICOPOLIS, AROUND 108 AD",
+   "attribution_line": "— Epictetus"
+  },
+  {
+   "position": 22,
+   "mentor_key": "roosevelt",
+   "mentor": "Theodore Roosevelt",
+   "passage": "Very often the man with the moral courage to speak in the open against labor when it is wrong is the only man anxious to do effective work for labor when labor is right.",
+   "era_line_stored": "the United States, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES, EARLY 1900S",
+   "attribution_line": "— Theodore Roosevelt"
+  }
+ ],
+ "all_entries": [
+  {
+   "position": 1,
+   "mentor_key": "marcus_aurelius",
+   "mentor": "Marcus Aurelius",
+   "passage": "Let that of Heraclitus never be out of thy mind, that the death of earth, is water, and the death of water, is air; and the death of air, is fire; and so on the contrary.",
+   "era_line_stored": "the Roman frontier, around 175 AD, on campaign",
+   "era_line_as_displayed": "THE ROMAN FRONTIER, AROUND 175 AD, ON CAMPAIGN",
+   "attribution_line": "— Marcus Aurelius"
+  },
+  {
+   "position": 2,
+   "mentor_key": "rockefeller",
+   "mentor": "John D. Rockefeller",
+   "passage": "It is a pleasure to testify even at this late date to his great kindness and faith in me.",
+   "era_line_stored": "New York, 1909, after retirement from active business",
+   "era_line_as_displayed": "NEW YORK, 1909, AFTER RETIREMENT FROM ACTIVE BUSINESS",
+   "attribution_line": "— John D. Rockefeller"
+  },
+  {
+   "position": 3,
+   "mentor_key": "addams",
+   "mentor": "Jane Addams",
+   "passage": "It should demand from its residents a scientific patience in the accumulation of facts and the steady holding of their sympathies as one of the best instruments for that accumulation.",
+   "era_line_stored": "Chicago, the settlement house movement, around 1910",
+   "era_line_as_displayed": "CHICAGO, THE SETTLEMENT HOUSE MOVEMENT, AROUND 1910",
+   "attribution_line": "— Jane Addams"
+  },
+  {
+   "position": 4,
+   "mentor_key": "twain",
+   "mentor": "Mark Twain",
+   "passage": "The desire for fame is only the desire to be continuously conspicuous and attract attention and be talked about.",
+   "era_line_stored": "the United States, turn of the twentieth century",
+   "era_line_as_displayed": "THE UNITED STATES, TURN OF THE TWENTIETH CENTURY",
+   "attribution_line": "— Mark Twain"
+  },
+  {
+   "position": 5,
+   "mentor_key": "thoreau",
+   "mentor": "Henry David Thoreau",
+   "passage": "When we are unhurried and wise, we perceive that only great and worthy things have any permanent and absolute existence,—that petty fears and petty pleasures are but the shadow of the reality.",
+   "era_line_stored": "Concord, Massachusetts, 1845 to 1854",
+   "era_line_as_displayed": "CONCORD, MASSACHUSETTS, 1845 TO 1854",
+   "attribution_line": "— Henry David Thoreau"
+  },
+  {
+   "position": 6,
+   "mentor_key": "cicero",
+   "mentor": "Cicero",
+   "passage": "When they are addressed in language expressly adapted to flatter their vanity, they look upon such empty persiflage as a testimony to the truth of their own praises.",
+   "era_line_stored": "Rome, around 44 BC",
+   "era_line_as_displayed": "ROME, AROUND 44 BC",
+   "attribution_line": "— Cicero"
+  },
+  {
+   "position": 7,
+   "mentor_key": "laozi",
+   "mentor": "Lao Tzu",
+   "passage": "It is only by this moderation that there is effected an early return (to man's normal state).",
+   "era_line_stored": "ancient China, by tradition the 6th century BC",
+   "era_line_as_displayed": "ANCIENT CHINA, BY TRADITION THE 6TH CENTURY BC",
+   "attribution_line": "— Lao Tzu"
+  },
+  {
+   "position": 8,
+   "mentor_key": "kempis",
+   "mentor": "Thomas a Kempis",
+   "passage": "Lo, thus shall the man be blessed, that seeketh God with all his heart, and receiveth not his soul in vain.",
+   "era_line_stored": "a monastery in the Low Countries, the 1400s",
+   "era_line_as_displayed": "A MONASTERY IN THE LOW COUNTRIES, THE 1400S",
+   "attribution_line": "— Thomas a Kempis"
+  },
+  {
+   "position": 9,
+   "mentor_key": "darwin",
+   "mentor": "Charles Darwin",
+   "passage": "The surface appears from a distance as if clothed with coarse pasture, but this in truth is nothing but fern.",
+   "era_line_stored": "aboard HMS Beagle and after, the 1830s onward",
+   "era_line_as_displayed": "ABOARD HMS BEAGLE AND AFTER, THE 1830S ONWARD",
+   "attribution_line": "— Charles Darwin"
+  },
+  {
+   "position": 10,
+   "mentor_key": "montaigne",
+   "mentor": "Michel de Montaigne",
+   "passage": "And, at all events, it will be always an honour to me, to be able to do anything which shall be for the pleasure of you and yours, on account of the obligation under which I lie to serve you.",
+   "era_line_stored": "his tower library in Gascony, France, the late 1500s",
+   "era_line_as_displayed": "HIS TOWER LIBRARY IN GASCONY, FRANCE, THE LATE 1500S",
+   "attribution_line": "— Michel de Montaigne"
+  },
+  {
+   "position": 11,
+   "mentor_key": "carnegie",
+   "mentor": "Andrew Carnegie",
+   "passage": "As the half-dozen young men who constituted our inner circle grew in knowledge, it was inevitable that the mysteries of life and death, the here and the hereafter, should cross our path and have to be grappled with.",
+   "era_line_stored": "the United States and Scotland, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES AND SCOTLAND, EARLY 1900S",
+   "attribution_line": "— Andrew Carnegie"
+  },
+  {
+   "position": 12,
+   "mentor_key": "booker_washington",
+   "mentor": "Booker T. Washington",
+   "passage": "I do not believe that any state should make a law that permits an ignorant and poverty-stricken white man to vote, and prevents a black man in the same condition from voting.",
+   "era_line_stored": "Tuskegee, Alabama, 1901",
+   "era_line_as_displayed": "TUSKEGEE, ALABAMA, 1901",
+   "attribution_line": "— Booker T. Washington"
+  },
+  {
+   "position": 13,
+   "mentor_key": "douglass",
+   "mentor": "Frederick Douglass",
+   "passage": "I therefore, though with great prudence, commenced early to ascertain their views and feelings in regard to their condition, and to imbue their minds with thoughts of freedom.",
+   "era_line_stored": "the American North, 1845, after escaping slavery",
+   "era_line_as_displayed": "THE AMERICAN NORTH, 1845, AFTER ESCAPING SLAVERY",
+   "attribution_line": "— Frederick Douglass"
+  },
+  {
+   "position": 14,
+   "mentor_key": "keller",
+   "mentor": "Helen Keller",
+   "passage": "You are spared the pain of many sights and sounds, which you are only too happy in escaping.",
+   "era_line_stored": "the United States, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES, EARLY 1900S",
+   "attribution_line": "— Helen Keller"
+  },
+  {
+   "position": 15,
+   "mentor_key": "faraday",
+   "mentor": "Michael Faraday",
+   "passage": "Think of the time man has lived in hopeless ignorance: think that only during a period which might be spanned by the life of one man, has the truth been known.",
+   "era_line_stored": "London, the Royal Institution, mid-1800s",
+   "era_line_as_displayed": "LONDON, THE ROYAL INSTITUTION, MID-1800S",
+   "attribution_line": "— Michael Faraday"
+  },
+  {
+   "position": 16,
+   "mentor_key": "augustine",
+   "mentor": "Augustine of Hippo",
+   "passage": "Thence did the fame spread, thence Thy praises glowed, shone; thence the mind of that enemy, though not turned to the soundness of believing, was yet turned back from her fury of persecuting.",
+   "era_line_stored": "North Africa, around 400 AD",
+   "era_line_as_displayed": "NORTH AFRICA, AROUND 400 AD",
+   "attribution_line": "— Augustine of Hippo"
+  },
+  {
+   "position": 17,
+   "mentor_key": "william_james",
+   "mentor": "William James",
+   "passage": "Take the happiness which achieved religious belief confers.",
+   "era_line_stored": "the United States, around 1902",
+   "era_line_as_displayed": "THE UNITED STATES, AROUND 1902",
+   "attribution_line": "— William James"
+  },
+  {
+   "position": 18,
+   "mentor_key": "seneca",
+   "mentor": "Seneca",
+   "passage": "It is the practice of the multitude to bark at eminent men as little dogs do at strangers; for they look upon other men’s virtues as the upbraiding of their own wickedness.",
+   "era_line_stored": "Rome, around 63 AD, in his last years",
+   "era_line_as_displayed": "ROME, AROUND 63 AD, IN HIS LAST YEARS",
+   "attribution_line": "— Seneca"
+  },
+  {
+   "position": 19,
+   "mentor_key": "emerson",
+   "mentor": "Ralph Waldo Emerson",
+   "passage": "Ever an old friend, ever like a dear friend and brother when we chat affectedly with strangers, comes in this honest face, and takes a grave liberty with us, and shames us out of our nonsense.",
+   "era_line_stored": "New England, mid-1800s",
+   "era_line_as_displayed": "NEW ENGLAND, MID-1800S",
+   "attribution_line": "— Ralph Waldo Emerson"
+  },
+  {
+   "position": 20,
+   "mentor_key": "grant",
+   "mentor": "Ulysses S. Grant",
+   "passage": "One of mine is that in positions of great responsibility every one should do his duty to the best of his ability where assigned by competent authority, without application or the use of influence to change his position.",
+   "era_line_stored": "the United States, 1885, writing his memoirs as he was dying",
+   "era_line_as_displayed": "THE UNITED STATES, 1885, WRITING HIS MEMOIRS AS HE WAS DYING",
+   "attribution_line": "— Ulysses S. Grant"
+  },
+  {
+   "position": 21,
+   "mentor_key": "epictetus",
+   "mentor": "Epictetus",
+   "passage": "But where there is death or exile or pain or infamy, there we attempt to run away, there we are struck with terror.",
+   "era_line_stored": "a Stoic school at Nicopolis, around 108 AD",
+   "era_line_as_displayed": "A STOIC SCHOOL AT NICOPOLIS, AROUND 108 AD",
+   "attribution_line": "— Epictetus"
+  },
+  {
+   "position": 22,
+   "mentor_key": "roosevelt",
+   "mentor": "Theodore Roosevelt",
+   "passage": "Very often the man with the moral courage to speak in the open against labor when it is wrong is the only man anxious to do effective work for labor when labor is right.",
+   "era_line_stored": "the United States, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES, EARLY 1900S",
+   "attribution_line": "— Theodore Roosevelt"
+  },
+  {
+   "position": 23,
+   "mentor_key": "marcus_aurelius",
+   "mentor": "Marcus Aurelius",
+   "passage": "Let death surprise me when it will, and where it will, I may be εὔμοιρος, or a happy man, nevertheless.",
+   "era_line_stored": "the Roman frontier, around 175 AD, on campaign",
+   "era_line_as_displayed": "THE ROMAN FRONTIER, AROUND 175 AD, ON CAMPAIGN",
+   "attribution_line": "— Marcus Aurelius"
+  },
+  {
+   "position": 24,
+   "mentor_key": "rockefeller",
+   "mentor": "John D. Rockefeller",
+   "passage": "But every new fact discovered, every widening of the boundaries of human knowledge by research, becomes universally known to all institutions of learning, and becomes a benefaction at once to the whole race.",
+   "era_line_stored": "New York, 1909, after retirement from active business",
+   "era_line_as_displayed": "NEW YORK, 1909, AFTER RETIREMENT FROM ACTIVE BUSINESS",
+   "attribution_line": "— John D. Rockefeller"
+  },
+  {
+   "position": 25,
+   "mentor_key": "addams",
+   "mentor": "Jane Addams",
+   "passage": "A more poetic prayer would be that the great mother breasts of our common humanity, with its labor and suffering and its homely comforts, may never be withheld from you.",
+   "era_line_stored": "Chicago, the settlement house movement, around 1910",
+   "era_line_as_displayed": "CHICAGO, THE SETTLEMENT HOUSE MOVEMENT, AROUND 1910",
+   "attribution_line": "— Jane Addams"
+  },
+  {
+   "position": 26,
+   "mentor_key": "twain",
+   "mentor": "Mark Twain",
+   "passage": "One of my sorrows, when the summer ends, is that I must put off my cheery and comfortable white clothes and enter for the winter into the depressing captivity of the shapeless and degrading black ones.",
+   "era_line_stored": "the United States, turn of the twentieth century",
+   "era_line_as_displayed": "THE UNITED STATES, TURN OF THE TWENTIETH CENTURY",
+   "attribution_line": "— Mark Twain"
+  },
+  {
+   "position": 27,
+   "mentor_key": "thoreau",
+   "mentor": "Henry David Thoreau",
+   "passage": "Philanthropy is almost the only virtue which is sufficiently appreciated by mankind.",
+   "era_line_stored": "Concord, Massachusetts, 1845 to 1854",
+   "era_line_as_displayed": "CONCORD, MASSACHUSETTS, 1845 TO 1854",
+   "attribution_line": "— Henry David Thoreau"
+  },
+  {
+   "position": 28,
+   "mentor_key": "cicero",
+   "mentor": "Cicero",
+   "passage": "To Scipio I am convinced no evil has befallen: mine is the disaster, if disaster there be; and to be severely distressed at one's own misfortunes does not show that you love your friend, but that you love yourself.",
+   "era_line_stored": "Rome, around 44 BC",
+   "era_line_as_displayed": "ROME, AROUND 44 BC",
+   "attribution_line": "— Cicero"
+  },
+  {
+   "position": 29,
+   "mentor_key": "laozi",
+   "mentor": "Lao Tzu",
+   "passage": "When wealth and honours lead to arrogancy, this brings its evil on itself.",
+   "era_line_stored": "ancient China, by tradition the 6th century BC",
+   "era_line_as_displayed": "ANCIENT CHINA, BY TRADITION THE 6TH CENTURY BC",
+   "attribution_line": "— Lao Tzu"
+  },
+  {
+   "position": 30,
+   "mentor_key": "kempis",
+   "mentor": "Thomas a Kempis",
+   "passage": "It may also come to pass that each opinion may be good; but to refuse to hearken to others when reason or occasion requireth it, is a mark of pride or wilfulness.",
+   "era_line_stored": "a monastery in the Low Countries, the 1400s",
+   "era_line_as_displayed": "A MONASTERY IN THE LOW COUNTRIES, THE 1400S",
+   "attribution_line": "— Thomas a Kempis"
+  },
+  {
+   "position": 31,
+   "mentor_key": "darwin",
+   "mentor": "Charles Darwin",
+   "passage": "Daily it is forced home on the mind of the geologist, that nothing, not even the wind that blows, is so unstable as the level of the crust of this earth.",
+   "era_line_stored": "aboard HMS Beagle and after, the 1830s onward",
+   "era_line_as_displayed": "ABOARD HMS BEAGLE AND AFTER, THE 1830S ONWARD",
+   "attribution_line": "— Charles Darwin"
+  },
+  {
+   "position": 32,
+   "mentor_key": "montaigne",
+   "mentor": "Michel de Montaigne",
+   "passage": "We have formed a truth by the consultation and concurrence of our five senses; but perhaps we should have the consent and contribution of eight or ten to make a certain discovery of it in its essence.",
+   "era_line_stored": "his tower library in Gascony, France, the late 1500s",
+   "era_line_as_displayed": "HIS TOWER LIBRARY IN GASCONY, FRANCE, THE LATE 1500S",
+   "attribution_line": "— Michel de Montaigne"
+  },
+  {
+   "position": 33,
+   "mentor_key": "carnegie",
+   "mentor": "Andrew Carnegie",
+   "passage": "There is no change in his habits, food, clothing, pleasures--no agonizing fear of want.",
+   "era_line_stored": "the United States and Scotland, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES AND SCOTLAND, EARLY 1900S",
+   "attribution_line": "— Andrew Carnegie"
+  },
+  {
+   "position": 34,
+   "mentor_key": "booker_washington",
+   "mentor": "Booker T. Washington",
+   "passage": "I believe that one always does himself and his audience an injustice when he speaks merely for the sake of speaking.",
+   "era_line_stored": "Tuskegee, Alabama, 1901",
+   "era_line_as_displayed": "TUSKEGEE, ALABAMA, 1901",
+   "attribution_line": "— Booker T. Washington"
+  },
+  {
+   "position": 35,
+   "mentor_key": "keller",
+   "mentor": "Helen Keller",
+   "passage": "The memory must be stored with ideas and the mind must be enriched with knowledge before writing becomes a natural and pleasurable effort.",
+   "era_line_stored": "the United States, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES, EARLY 1900S",
+   "attribution_line": "— Helen Keller"
+  },
+  {
+   "position": 36,
+   "mentor_key": "augustine",
+   "mentor": "Augustine of Hippo",
+   "passage": "Let us see then, thou soul of man, whether present time can be long: for to thee it is given to feel and to measure length of time.",
+   "era_line_stored": "North Africa, around 400 AD",
+   "era_line_as_displayed": "NORTH AFRICA, AROUND 400 AD",
+   "attribution_line": "— Augustine of Hippo"
+  },
+  {
+   "position": 37,
+   "mentor_key": "william_james",
+   "mentor": "William James",
+   "passage": "And that experience does largely verify these primeval religious ideas is proved by the fact that the mind‐cure movement spreads as it does, not by proclamation and assertion simply, but by palpable experiential results.",
+   "era_line_stored": "the United States, around 1902",
+   "era_line_as_displayed": "THE UNITED STATES, AROUND 1902",
+   "attribution_line": "— William James"
+  },
+  {
+   "position": 38,
+   "mentor_key": "seneca",
+   "mentor": "Seneca",
+   "passage": "There are, moreover, certain common offices of humanity, which are only allowed him as he is a man, and without any regard either to vice or virtue.",
+   "era_line_stored": "Rome, around 63 AD, in his last years",
+   "era_line_as_displayed": "ROME, AROUND 63 AD, IN HIS LAST YEARS",
+   "attribution_line": "— Seneca"
+  },
+  {
+   "position": 39,
+   "mentor_key": "emerson",
+   "mentor": "Ralph Waldo Emerson",
+   "passage": "Life is a festival only to the wise.",
+   "era_line_stored": "New England, mid-1800s",
+   "era_line_as_displayed": "NEW ENGLAND, MID-1800S",
+   "attribution_line": "— Ralph Waldo Emerson"
+  },
+  {
+   "position": 40,
+   "mentor_key": "grant",
+   "mentor": "Ulysses S. Grant",
+   "passage": "The justice of the cause which in the end prevailed, will, I doubt not, come to be acknowledged by every citizen of the land, in time.",
+   "era_line_stored": "the United States, 1885, writing his memoirs as he was dying",
+   "era_line_as_displayed": "THE UNITED STATES, 1885, WRITING HIS MEMOIRS AS HE WAS DYING",
+   "attribution_line": "— Ulysses S. Grant"
+  },
+  {
+   "position": 41,
+   "mentor_key": "epictetus",
+   "mentor": "Epictetus",
+   "passage": "When at a small cost you are supplied with everything for the body, do not be proud of this; nor, if you drink water, say on every occasion, I drink water.",
+   "era_line_stored": "a Stoic school at Nicopolis, around 108 AD",
+   "era_line_as_displayed": "A STOIC SCHOOL AT NICOPOLIS, AROUND 108 AD",
+   "attribution_line": "— Epictetus"
+  },
+  {
+   "position": 42,
+   "mentor_key": "roosevelt",
+   "mentor": "Theodore Roosevelt",
+   "passage": "If men choose to say that it would have been better not to build it, than to build it as the result of such action, their position, although foolish, is compatible with belief in their wrongheaded sincerity.",
+   "era_line_stored": "the United States, early 1900s",
+   "era_line_as_displayed": "THE UNITED STATES, EARLY 1900S",
+   "attribution_line": "— Theodore Roosevelt"
+  },
+  {
+   "position": 43,
+   "mentor_key": "marcus_aurelius",
+   "mentor": "Marcus Aurelius",
+   "passage": "Desire and dislike, opinion and affection, are within the power of the will; whereas health, wealth, honour, and other such are generally not so.",
+   "era_line_stored": "the Roman frontier, around 175 AD, on campaign",
+   "era_line_as_displayed": "THE ROMAN FRONTIER, AROUND 175 AD, ON CAMPAIGN",
+   "attribution_line": "— Marcus Aurelius"
+  },
+  {
+   "position": 44,
+   "mentor_key": "rockefeller",
+   "mentor": "John D. Rockefeller",
+   "passage": "Doctors, clergymen, lawyers, as well as many high-grade men of affairs, are devoting their best and most unselfish efforts to some of the plans that we are all trying to work out.",
+   "era_line_stored": "New York, 1909, after retirement from active business",
+   "era_line_as_displayed": "NEW YORK, 1909, AFTER RETIREMENT FROM ACTIVE BUSINESS",
+   "attribution_line": "— John D. Rockefeller"
+  },
+  {
+   "position": 45,
+   "mentor_key": "addams",
+   "mentor": "Jane Addams",
+   "passage": "We are slowly learning that social advance depends quite as much upon an increase in moral sensibility as it does upon a sense of duty, and of this one could cite many illustrations.",
+   "era_line_stored": "Chicago, the settlement house movement, around 1910",
+   "era_line_as_displayed": "CHICAGO, THE SETTLEMENT HOUSE MOVEMENT, AROUND 1910",
+   "attribution_line": "— Jane Addams"
+  },
+  {
+   "position": 46,
+   "mentor_key": "twain",
+   "mentor": "Mark Twain",
+   "passage": "I doubt if God has given us any refreshment which, taken in moderation, is unwholesome, except microbes.",
+   "era_line_stored": "the United States, turn of the twentieth century",
+   "era_line_as_displayed": "THE UNITED STATES, TURN OF THE TWENTIETH CENTURY",
+   "attribution_line": "— Mark Twain"
+  },
+  {
+   "position": 47,
+   "mentor_key": "thoreau",
+   "mentor": "Henry David Thoreau",
+   "passage": "And every few years a new lot is laid down and run over; so that, if some have the pleasure of riding on a rail, others have the misfortune to be ridden upon.",
+   "era_line_stored": "Concord, Massachusetts, 1845 to 1854",
+   "era_line_as_displayed": "CONCORD, MASSACHUSETTS, 1845 TO 1854",
+   "attribution_line": "— Henry David Thoreau"
+  },
+  {
+   "position": 48,
+   "mentor_key": "cicero",
+   "mentor": "Cicero",
+   "passage": "Old men retain their intellects well enough, if only they keep their minds active and fully employed.",
+   "era_line_stored": "Rome, around 44 BC",
+   "era_line_as_displayed": "ROME, AROUND 44 BC",
+   "attribution_line": "— Cicero"
+  },
+  {
+   "position": 49,
+   "mentor_key": "laozi",
+   "mentor": "Lao Tzu",
+   "passage": "Therefore the sage knows (these things) of himself, but does not parade (his knowledge); loves, but does not (appear to set a) value on, himself.",
+   "era_line_stored": "ancient China, by tradition the 6th century BC",
+   "era_line_as_displayed": "ANCIENT CHINA, BY TRADITION THE 6TH CENTURY BC",
+   "attribution_line": "— Lao Tzu"
+  },
+  {
+   "position": 50,
+   "mentor_key": "kempis",
+   "mentor": "Thomas a Kempis",
+   "passage": "For even thy true faithful ones themselves, who order their whole life to amendment, oftentimes gain from this most excellent Sacrament great grace of devotion and love of virtue.",
+   "era_line_stored": "a monastery in the Low Countries, the 1400s",
+   "era_line_as_displayed": "A MONASTERY IN THE LOW COUNTRIES, THE 1400S",
+   "attribution_line": "— Thomas a Kempis"
+  }
+ ]
+}
