@@ -1,0 +1,76 @@
+MentorMind landing page hero ("Reach toward the wise,") - videos and posters
+Source: mentormind-live/web/landing.html (read only). Copied unchanged, original file names.
+
+HOW THE PAGE PICKS A FILE
+An inline script in landing.html decides before the video has a source:
+  phone version  if window.innerWidth <= 700, or the browser reports data saver on (any width)
+  desktop version otherwise (this includes tablets wider than 700 px)
+The <video> element: autoplay muted loop playsinline preload="auto"
+  - It LOOPS forever (does not play once). It starts on its own, muted.
+  - The poster image shows until the first frame is ready.
+
+FILES
+
+1. hero-phone-v2.mp4
+   Screen size: phones, viewport width 700 px or less (or data saver on)
+   Duration: 10.00 s
+   Resolution: 540 x 960 (portrait 9:16), h264, 24 fps, no audio track
+   Plays: loops continuously
+   Size: 886,090 bytes (0.85 MB)
+
+2. hero-phone-poster-v3.jpg
+   Screen size: same as the phone video (its poster)
+   Resolution: 540 x 960, JPEG
+   Size: 32,999 bytes
+
+3. hero-desktop-v2.mp4
+   Screen size: viewport wider than 700 px (laptops, desktops, tablets)
+   Duration: 10.00 s
+   Resolution: 1920 x 1080 (16:9), h264, 24 fps, no audio track
+   Plays: loops continuously
+   Size: 3,856,172 bytes (3.68 MB)
+
+4. hero-desktop-poster-v3.jpg
+   Screen size: same as the desktop video (its poster)
+   Resolution: 1920 x 1080, JPEG
+   Size: 176,133 bytes
+
+NOT COPIED: web/hero.mp4 (1920x1080, 10.00 s, 24 fps, 8.59 MB, has an AAC audio track). It is the
+original, higher-quality source of the desktop clip. The landing page does not use it any more
+(the page only loads the files above), so it is not part of what visitors see. Say the word if
+you want it in the repo as well.
+
+CSS THAT SIZES AND POSITIONS THE VIDEO (exact, from landing.html)
+
+  .hero{position:relative;min-height:100vh;overflow:hidden;}
+  .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+
+Same rule for phone and desktop. There is NO object-position set, so the browser default
+(50% 50%, centred) applies. There is no separate phone rule for the video itself.
+  object-fit: cover
+  object-position: 50% 50% (default, not set in the CSS)
+  width: 100%
+  height: 100%  (of the .hero section, which is min-height: 100vh, so the full screen height)
+  position: absolute; inset: 0; z-index: 0
+
+What that means on a phone, for a 390 x 844 screen:
+  The 540x960 clip is scaled until it covers the screen: scale = 844/960 = 0.879, so it is drawn
+  about 475 x 844 px. The sides are cropped about 42 px each (about 9% of the width per side).
+  Top and bottom are not cropped. The crop is centred.
+  Wider phones (e.g. 430 x 932) crop the sides a little less; shorter or browser-bar-affected
+  screens change it slightly because 100vh follows the browser's own viewport height.
+
+Overlays drawn on top of the video (they darken it, so frames will look darker on the page than
+in the raw file):
+  Everywhere:
+    .veil-left{position:absolute;inset:0;z-index:1;pointer-events:none;
+      background:linear-gradient(90deg, rgba(14,17,26,.96) 0%, rgba(14,17,26,.82) 26%, rgba(14,17,26,.35) 50%, rgba(14,17,26,0) 72%);}
+    .veil-vign{position:absolute;inset:0;z-index:1;pointer-events:none;
+      background:radial-gradient(120% 90% at 60% 50%, transparent 55%, rgba(14,17,26,.5) 100%);}
+  Viewport 820 px or less (replaces the left-to-right veil with a top-to-bottom one):
+    .veil-left{background:linear-gradient(180deg, rgba(14,17,26,.75) 0%, rgba(14,17,26,.45) 45%, rgba(14,17,26,.85) 100%);}
+    .hero-text{left:0;right:0;text-align:center;padding:0 26px;max-width:none;top:44%;}
+
+Text on top (for reference): headline "Reach toward / the wise," (Cormorant Garamond, gold italic on the
+second line), a subline, and a gold "Get started" button, all faded in by CSS animation after load.
+The nav (logo, Sign in, Sign up) sits at the top.
