@@ -1,0 +1,1552 @@
+{
+ "desktop": {
+  "shots": [
+   "01-nav-hero",
+   "02a-demo-conversation",
+   "02b-demo-conversation",
+   "03a-how-it-works-carousel",
+   "03b-how-it-works-carousel",
+   "04a-memory",
+   "04b-memory",
+   "05a-support-donation",
+   "05b-support-donation",
+   "05c-support-donation",
+   "06a-faq",
+   "06b-faq",
+   "07-footer"
+  ],
+  "prelaunch": {
+   "form_url": "https://tally.so/r/kbbEYo",
+   "locked": true
+  },
+  "heroButtonText": "Join the founding list",
+  "hero": {
+   "src": "hero-desktop-v2.mp4",
+   "poster": "hero-desktop-poster-v3.jpg",
+   "w": 1920,
+   "h": 1080,
+   "dur": 10,
+   "loop": true,
+   "muted": true,
+   "ready": 3
+  },
+  "carouselInitial": {
+   "total": 12,
+   "centeredIndexAtLoad": 7,
+   "centeredName": "Charles Darwin"
+  },
+  "docHeight": 7560,
+  "demoWords": [
+   97,
+   97
+  ],
+  "memoryDone": true,
+  "stakeWords": [
+   34,
+   34
+  ],
+  "stakeQuotes": 2,
+  "reveals": [
+   10,
+   10
+  ],
+  "nav-hero": {
+   "top": 0,
+   "height": 900
+  },
+  "demo-conversation": {
+   "top": 900,
+   "height": 1202
+  },
+  "carouselShot": {
+   "centeredIndex": 0,
+   "name": "Marcus Aurelius"
+  },
+  "how-it-works-carousel": {
+   "top": 2102,
+   "height": 1082
+  },
+  "memory": {
+   "top": 3184,
+   "height": 961
+  },
+  "support-donation": {
+   "top": 4145,
+   "height": 2191
+  },
+  "faq": {
+   "top": 6336,
+   "height": 976
+  },
+  "footer": {
+   "top": 7312,
+   "height": 428
+  },
+  "selectedState": {
+   "selectedAmount": "10",
+   "border": "rgb(138, 116, 68)",
+   "shadow": "rgba(216, 166, 87, 0.45) 0px 0px 30px -14px",
+   "flameFilter": "drop-shadow(rgba(240, 196, 121, 0.95) 0px 0px 20px) brightness(1.4) saturate(1.2"
+  },
+  "fullPage": {
+   "cssHeight": 7740,
+   "scale": 1
+  },
+  "styles": [
+   [
+    "body",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "26.4px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "nav .name",
+    {
+     "font": "Cormorant Garamond",
+     "size": "21.6px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "35.64px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "nav .enter",
+    {
+     "font": "Inter",
+     "size": "14.4px",
+     "weight": "400",
+     "color": "rgb(236, 227, 210)",
+     "lh": "normal",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "hero h1",
+    {
+     "font": "Cormorant Garamond",
+     "size": "64px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "71.68px",
+     "ls": "0.5px",
+     "align": "start"
+    }
+   ],
+   [
+    "hero sub",
+    {
+     "font": "Cormorant Garamond",
+     "size": "21.6px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "35.64px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "hero button",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(26, 18, 6)",
+     "lh": "normal",
+     "ls": "0.4px",
+     "align": "center"
+    }
+   ],
+   [
+    "demo eyebrow",
+    {
+     "font": "Inter",
+     "size": "16.8px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "27.72px",
+     "ls": "3px",
+     "align": "center"
+    }
+   ],
+   [
+    "section-title",
+    {
+     "font": "Cormorant Garamond",
+     "size": "54.4px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "65.28px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "demo who",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "600",
+     "color": "rgb(216, 166, 87)",
+     "lh": "50.16px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "demo era",
+    {
+     "font": "Inter",
+     "size": "11.84px",
+     "weight": "300",
+     "color": "rgb(202, 162, 94)",
+     "lh": "19.536px",
+     "ls": "0.4px",
+     "align": "start"
+    }
+   ],
+   [
+    "demo you label",
+    {
+     "font": "Inter",
+     "size": "10.88px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "17.952px",
+     "ls": "2px",
+     "align": "start"
+    }
+   ],
+   [
+    "demo you text",
+    {
+     "font": "Cormorant Garamond",
+     "size": "22.72px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "37.488px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "demo reply",
+    {
+     "font": "Inter",
+     "size": "20.48px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "37.888px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "preview tag",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(202, 162, 94)",
+     "lh": "26.4px",
+     "ls": "1.5px",
+     "align": "center"
+    }
+   ],
+   [
+    "pillar number",
+    {
+     "font": "Cormorant Garamond",
+     "size": "27.2px",
+     "weight": "300",
+     "color": "rgb(216, 166, 87)",
+     "lh": "44.88px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "pillar text",
+    {
+     "font": "Inter",
+     "size": "15.2px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "25.08px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "mentor cat",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "26.4px",
+     "ls": "3px",
+     "align": "start"
+    }
+   ],
+   [
+    "mentor name",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "600",
+     "color": "rgb(236, 227, 210)",
+     "lh": "33.44px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "mentor blurb",
+    {
+     "font": "Inter",
+     "size": "14.72px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "22.816px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "slider note",
+    {
+     "font": "Cormorant Garamond",
+     "size": "24px",
+     "weight": "500",
+     "color": "rgb(169, 162, 144)",
+     "lh": "39.6px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "memory eyebrow",
+    {
+     "font": "Inter",
+     "size": "15.2px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "25.08px",
+     "ls": "4px",
+     "align": "center"
+    }
+   ],
+   [
+    "memory statement",
+    {
+     "font": "Cormorant Garamond",
+     "size": "48px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "67.2px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "memory sub",
+    {
+     "font": "Cormorant Garamond",
+     "size": "18.88px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "31.152px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support title",
+    {
+     "font": "Cormorant Garamond",
+     "size": "40px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "50px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support lede",
+    {
+     "font": "Inter",
+     "size": "16.32px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "27.744px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support h3",
+    {
+     "font": "Cormorant Garamond",
+     "size": "22.4px",
+     "weight": "600",
+     "color": "rgb(202, 162, 94)",
+     "lh": "36.96px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support list li",
+    {
+     "font": "Inter",
+     "size": "15.68px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "25.088px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "stake line",
+    {
+     "font": "Cormorant Garamond",
+     "size": "24.8px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "37.2px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "stake quote text",
+    {
+     "font": "Cormorant Garamond",
+     "size": "14.72px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "22.08px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "stake era",
+    {
+     "font": "Inter",
+     "size": "9.92px",
+     "weight": "300",
+     "color": "rgb(202, 162, 94)",
+     "lh": "16.368px",
+     "ls": "1.4px",
+     "align": "left"
+    }
+   ],
+   [
+    "tier name",
+    {
+     "font": "Cormorant Garamond",
+     "size": "16px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "26.4px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "tier amount",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "300",
+     "color": "rgb(202, 162, 94)",
+     "lh": "50.16px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "give button",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(26, 18, 6)",
+     "lh": "normal",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "give label",
+    {
+     "font": "Inter",
+     "size": "12.48px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "20.592px",
+     "ls": "0.4px",
+     "align": "left"
+    }
+   ],
+   [
+    "faq eyebrow",
+    {
+     "font": "Inter",
+     "size": "16.8px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "27.72px",
+     "ls": "3px",
+     "align": "center"
+    }
+   ],
+   [
+    "faq title",
+    {
+     "font": "Cormorant Garamond",
+     "size": "48px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "79.2px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "faq question",
+    {
+     "font": "Cormorant Garamond",
+     "size": "21.6px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "normal",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "faq answer",
+    {
+     "font": "Inter",
+     "size": "16.32px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "27.744px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "footer tag",
+    {
+     "font": "Cormorant Garamond",
+     "size": "16.32px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "24.48px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "footer h4",
+    {
+     "font": "Inter",
+     "size": "12.48px",
+     "weight": "500",
+     "color": "rgb(202, 162, 94)",
+     "lh": "20.592px",
+     "ls": "2px",
+     "align": "start"
+    }
+   ],
+   [
+    "footer link",
+    {
+     "font": "Inter",
+     "size": "15.2px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "25.08px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "footer bottom",
+    {
+     "font": "Inter",
+     "size": "13.6px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "22.44px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "ai notice",
+    {
+     "font": "Inter",
+     "size": "12.48px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "18.72px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ]
+  ],
+  "tapAndSmall": {
+   "smallFont": [
+    [
+     "dera",
+     "11.8px"
+    ],
+    [
+     "youlbl",
+     "10.9px"
+    ],
+    [
+     "sq-era",
+     "9.9px"
+    ],
+    [
+     "LABEL",
+     "12.5px"
+    ],
+    [
+     "footer-handle",
+     "12.5px"
+    ],
+    [
+     "H4",
+     "12.5px"
+    ],
+    [
+     "footer-ai-notice",
+     "12.5px"
+    ]
+   ],
+   "smallTap": [
+    [
+     "enter",
+     "92x37",
+     "Sign in"
+    ],
+    [
+     "enter enter-primary",
+     "98x37",
+     "Sign up"
+    ],
+    [
+     "[object SVGAnimatedString]",
+     "12x12",
+     ""
+    ],
+    [
+     "tier-flame flame-slot",
+     "20x30",
+     ""
+    ],
+    [
+     "ember-layer",
+     "20x30",
+     ""
+    ],
+    [
+     "ember",
+     "2x2",
+     ""
+    ],
+    [
+     "tier-name",
+     "151x26",
+     "Light a Candle"
+    ],
+    [
+     "tier-name",
+     "151x26",
+     "Tend the Flame"
+    ],
+    [
+     "tier-name",
+     "151x26",
+     "Keeper of the Flam"
+    ],
+    [
+     "A",
+     "238x19",
+     "Read more about wh"
+    ],
+    [
+     "plus",
+     "26x26",
+     ""
+    ],
+    [
+     "A",
+     "92x25",
+     "Sign in"
+    ],
+    [
+     "A",
+     "92x25",
+     "The mentors"
+    ],
+    [
+     "A",
+     "92x25",
+     "How it works"
+    ],
+    [
+     "A",
+     "92x25",
+     "Donate"
+    ],
+    [
+     "A",
+     "78x25",
+     "About"
+    ]
+   ],
+   "overflowX": 0,
+   "wide": []
+  },
+  "network": {
+   "requests": 26,
+   "totalKB": 5110,
+   "byTypeKB": {
+    "Document": 19,
+    "Stylesheet": 1,
+    "Image": 1166,
+    "Font": 122,
+    "Media": 3768,
+    "Fetch": 1,
+    "Other": 32
+   },
+   "failed": [],
+   "thirdParty": [
+    "fonts.googleapis.com",
+    "fonts.gstatic.com"
+   ],
+   "biggest": [
+    [
+     "hero-desktop-v2.mp4",
+     "3768 KB"
+    ],
+    [
+     "hero-desktop-poster-v3.jpg",
+     "172 KB"
+    ],
+    [
+     "adversity.jpeg",
+     "90 KB"
+    ],
+    [
+     "leadership.jpeg",
+     "86 KB"
+    ],
+    [
+     "faith.jpeg",
+     "84 KB"
+    ],
+    [
+     "friendship.jpeg",
+     "83 KB"
+    ]
+   ],
+   "NOTE": "thirdParty corrected by hand after a separate host check; byte totals for 'phone' are not a cold load"
+  },
+  "console": []
+ },
+ "phone": {
+  "shots": [
+   "01-nav-hero",
+   "02a-demo-conversation",
+   "02b-demo-conversation",
+   "02c-demo-conversation",
+   "03a-how-it-works-carousel",
+   "03b-how-it-works-carousel",
+   "04a-memory",
+   "04b-memory",
+   "05a-support-donation",
+   "05b-support-donation",
+   "05c-support-donation",
+   "05d-support-donation",
+   "06a-faq",
+   "06b-faq",
+   "07a-footer",
+   "07b-footer"
+  ],
+  "prelaunch": {
+   "form_url": "https://tally.so/r/kbbEYo",
+   "locked": true
+  },
+  "heroButtonText": "Join the founding list",
+  "hero": {
+   "src": "hero-phone-v2.mp4",
+   "poster": "hero-phone-poster-v3.jpg",
+   "w": 540,
+   "h": 960,
+   "dur": 10,
+   "loop": true,
+   "muted": true,
+   "ready": 4
+  },
+  "carouselInitial": {
+   "total": 12,
+   "centeredIndexAtLoad": 7,
+   "centeredName": "Charles Darwin"
+  },
+  "docHeight": 9506,
+  "demoWords": [
+   97,
+   97
+  ],
+  "memoryDone": true,
+  "stakeWords": [
+   34,
+   34
+  ],
+  "stakeQuotes": 2,
+  "reveals": [
+   10,
+   10
+  ],
+  "nav-hero": {
+   "top": 0,
+   "height": 844
+  },
+  "demo-conversation": {
+   "top": 844,
+   "height": 2009
+  },
+  "carouselShot": {
+   "centeredIndex": 0,
+   "name": "Marcus Aurelius"
+  },
+  "how-it-works-carousel": {
+   "top": 2853,
+   "height": 1270
+  },
+  "memory": {
+   "top": 4123,
+   "height": 1219
+  },
+  "support-donation": {
+   "top": 5342,
+   "height": 2821
+  },
+  "faq": {
+   "top": 8163,
+   "height": 1080
+  },
+  "footer": {
+   "top": 9243,
+   "height": 1012
+  },
+  "selectedState": {
+   "selectedAmount": "10",
+   "border": "rgb(138, 116, 68)",
+   "shadow": "rgba(216, 166, 87, 0.45) 0px 0px 30px -14px",
+   "flameFilter": "drop-shadow(rgba(240, 196, 121, 0.95) 0px 0px 20px) brightness(1.4) saturate(1.2"
+  },
+  "fullPage": {
+   "cssHeight": 10255,
+   "scale": 0.756
+  },
+  "styles": [
+   [
+    "body",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "26.4px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "nav .name",
+    {
+     "font": "Cormorant Garamond",
+     "size": "21.6px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "35.64px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "nav .enter",
+    {
+     "font": "Inter",
+     "size": "13.12px",
+     "weight": "400",
+     "color": "rgb(236, 227, 210)",
+     "lh": "normal",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "hero h1",
+    {
+     "font": "Cormorant Garamond",
+     "size": "40px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "44.8px",
+     "ls": "0.5px",
+     "align": "center"
+    }
+   ],
+   [
+    "hero sub",
+    {
+     "font": "Cormorant Garamond",
+     "size": "16.8px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "27.72px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "hero button",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(26, 18, 6)",
+     "lh": "normal",
+     "ls": "0.4px",
+     "align": "center"
+    }
+   ],
+   [
+    "demo eyebrow",
+    {
+     "font": "Inter",
+     "size": "16.8px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "27.72px",
+     "ls": "3px",
+     "align": "center"
+    }
+   ],
+   [
+    "section-title",
+    {
+     "font": "Cormorant Garamond",
+     "size": "35.2px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "42.24px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "demo who",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "600",
+     "color": "rgb(216, 166, 87)",
+     "lh": "50.16px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "demo era",
+    {
+     "font": "Inter",
+     "size": "11.84px",
+     "weight": "300",
+     "color": "rgb(202, 162, 94)",
+     "lh": "19.536px",
+     "ls": "0.4px",
+     "align": "start"
+    }
+   ],
+   [
+    "demo you label",
+    {
+     "font": "Inter",
+     "size": "10.88px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "17.952px",
+     "ls": "2px",
+     "align": "start"
+    }
+   ],
+   [
+    "demo you text",
+    {
+     "font": "Cormorant Garamond",
+     "size": "22.72px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "37.488px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "demo reply",
+    {
+     "font": "Inter",
+     "size": "20.48px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "37.888px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "preview tag",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(202, 162, 94)",
+     "lh": "26.4px",
+     "ls": "1.5px",
+     "align": "center"
+    }
+   ],
+   [
+    "pillar number",
+    {
+     "font": "Cormorant Garamond",
+     "size": "27.2px",
+     "weight": "300",
+     "color": "rgb(216, 166, 87)",
+     "lh": "44.88px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "pillar text",
+    {
+     "font": "Inter",
+     "size": "15.2px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "25.08px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "mentor cat",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "26.4px",
+     "ls": "3px",
+     "align": "start"
+    }
+   ],
+   [
+    "mentor name",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "600",
+     "color": "rgb(236, 227, 210)",
+     "lh": "33.44px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "mentor blurb",
+    {
+     "font": "Inter",
+     "size": "14.72px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "22.816px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "slider note",
+    {
+     "font": "Cormorant Garamond",
+     "size": "24px",
+     "weight": "500",
+     "color": "rgb(169, 162, 144)",
+     "lh": "39.6px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "memory eyebrow",
+    {
+     "font": "Inter",
+     "size": "15.2px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "25.08px",
+     "ls": "4px",
+     "align": "center"
+    }
+   ],
+   [
+    "memory statement",
+    {
+     "font": "Cormorant Garamond",
+     "size": "32px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "44.8px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "memory sub",
+    {
+     "font": "Cormorant Garamond",
+     "size": "18.88px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "31.152px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support title",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "38px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support lede",
+    {
+     "font": "Inter",
+     "size": "16.32px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "27.744px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support h3",
+    {
+     "font": "Cormorant Garamond",
+     "size": "22.4px",
+     "weight": "600",
+     "color": "rgb(202, 162, 94)",
+     "lh": "36.96px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "support list li",
+    {
+     "font": "Inter",
+     "size": "15.68px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "25.088px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "stake line",
+    {
+     "font": "Cormorant Garamond",
+     "size": "20px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "30px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "stake quote text",
+    {
+     "font": "Cormorant Garamond",
+     "size": "14.72px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "22.08px",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "stake era",
+    {
+     "font": "Inter",
+     "size": "9.92px",
+     "weight": "300",
+     "color": "rgb(202, 162, 94)",
+     "lh": "16.368px",
+     "ls": "1.4px",
+     "align": "left"
+    }
+   ],
+   [
+    "tier name",
+    {
+     "font": "Cormorant Garamond",
+     "size": "16px",
+     "weight": "300",
+     "color": "rgb(236, 227, 210)",
+     "lh": "26.4px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "tier amount",
+    {
+     "font": "Cormorant Garamond",
+     "size": "30.4px",
+     "weight": "300",
+     "color": "rgb(202, 162, 94)",
+     "lh": "50.16px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "give button",
+    {
+     "font": "Inter",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(26, 18, 6)",
+     "lh": "normal",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "give label",
+    {
+     "font": "Inter",
+     "size": "12.48px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "20.592px",
+     "ls": "0.4px",
+     "align": "left"
+    }
+   ],
+   [
+    "faq eyebrow",
+    {
+     "font": "Inter",
+     "size": "16.8px",
+     "weight": "500",
+     "color": "rgb(216, 166, 87)",
+     "lh": "27.72px",
+     "ls": "3px",
+     "align": "center"
+    }
+   ],
+   [
+    "faq title",
+    {
+     "font": "Cormorant Garamond",
+     "size": "32px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "52.8px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ],
+   [
+    "faq question",
+    {
+     "font": "Cormorant Garamond",
+     "size": "21.6px",
+     "weight": "500",
+     "color": "rgb(236, 227, 210)",
+     "lh": "normal",
+     "ls": "normal",
+     "align": "left"
+    }
+   ],
+   [
+    "faq answer",
+    {
+     "font": "Inter",
+     "size": "16.32px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "27.744px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "footer tag",
+    {
+     "font": "Cormorant Garamond",
+     "size": "16.32px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "24.48px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "footer h4",
+    {
+     "font": "Inter",
+     "size": "12.48px",
+     "weight": "500",
+     "color": "rgb(202, 162, 94)",
+     "lh": "20.592px",
+     "ls": "2px",
+     "align": "start"
+    }
+   ],
+   [
+    "footer link",
+    {
+     "font": "Inter",
+     "size": "15.2px",
+     "weight": "300",
+     "color": "rgb(169, 162, 144)",
+     "lh": "25.08px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "footer bottom",
+    {
+     "font": "Inter",
+     "size": "13.6px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "22.44px",
+     "ls": "normal",
+     "align": "start"
+    }
+   ],
+   [
+    "ai notice",
+    {
+     "font": "Inter",
+     "size": "12.48px",
+     "weight": "300",
+     "color": "rgb(148, 142, 125)",
+     "lh": "18.72px",
+     "ls": "normal",
+     "align": "center"
+    }
+   ]
+  ],
+  "tapAndSmall": {
+   "smallFont": [
+    [
+     "dera",
+     "11.8px"
+    ],
+    [
+     "youlbl",
+     "10.9px"
+    ],
+    [
+     "sq-era",
+     "9.9px"
+    ],
+    [
+     "LABEL",
+     "12.5px"
+    ],
+    [
+     "footer-handle",
+     "12.5px"
+    ],
+    [
+     "H4",
+     "12.5px"
+    ],
+    [
+     "footer-ai-notice",
+     "12.5px"
+    ]
+   ],
+   "smallTap": [
+    [
+     "enter",
+     "74x34",
+     "Sign in"
+    ],
+    [
+     "enter enter-primary",
+     "79x34",
+     "Sign up"
+    ],
+    [
+     "[object SVGAnimatedString]",
+     "12x12",
+     ""
+    ],
+    [
+     "tier-flame flame-slot",
+     "20x30",
+     ""
+    ],
+    [
+     "ember-layer",
+     "20x30",
+     ""
+    ],
+    [
+     "ember",
+     "3x3",
+     ""
+    ],
+    [
+     "tier-name",
+     "312x26",
+     "Light a Candle"
+    ],
+    [
+     "tier-name",
+     "312x26",
+     "Tend the Flame"
+    ],
+    [
+     "tier-name",
+     "312x26",
+     "Keeper of the Flam"
+    ],
+    [
+     "A",
+     "238x19",
+     "Read more about wh"
+    ],
+    [
+     "plus",
+     "26x26",
+     ""
+    ],
+    [
+     "A",
+     "326x25",
+     "Sign in"
+    ],
+    [
+     "A",
+     "326x25",
+     "The mentors"
+    ],
+    [
+     "A",
+     "326x25",
+     "How it works"
+    ],
+    [
+     "A",
+     "326x25",
+     "Donate"
+    ],
+    [
+     "A",
+     "326x25",
+     "About"
+    ]
+   ],
+   "overflowX": 0,
+   "wide": []
+  },
+  "network": {
+   "requests": 25,
+   "totalKB": 900,
+   "byTypeKB": {
+    "Document": 0,
+    "Stylesheet": 0,
+    "Image": 33,
+    "Font": 0,
+    "Media": 866,
+    "Fetch": 1
+   },
+   "failed": [],
+   "thirdParty": [
+    "fonts.googleapis.com",
+    "fonts.gstatic.com"
+   ],
+   "biggest": [
+    [
+     "hero-phone-v2.mp4",
+     "866 KB"
+    ],
+    [
+     "hero-phone-poster-v3.jpg",
+     "33 KB"
+    ],
+    [
+     "douglass",
+     "0 KB"
+    ],
+    [
+     "epictetus",
+     "0 KB"
+    ],
+    [
+     "info",
+     "0 KB"
+    ],
+    [
+     "info",
+     "0 KB"
+    ]
+   ],
+   "NOTE": "thirdParty corrected by hand after a separate host check; byte totals for 'phone' are not a cold load"
+  },
+  "console": []
+ }
+}
